@@ -2,7 +2,7 @@ package chapter4;
 
 
 public class Node<T> {
-	private T data;
+	public T data;
 	private Node<T> nextNode;
 	
 	public Node(T data) {
