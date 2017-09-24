@@ -1,6 +1,8 @@
 package linkedlist;
 
-public class CircularLinkedList {
+import linkedlist.Node;
+
+public class LLinkedList {
 
 	private Node head;
 
@@ -57,16 +59,32 @@ public class CircularLinkedList {
 		  System.out.println();
 		 }
 	
+	
 	public Node makeCircularLinkedList(Node headA){
 		
 		Node currNode = headA ;
-		while(currNode!=null){
+		while(currNode.nextNode!=null){
 			
 			currNode = currNode.nextNode ;
 			
 		}
 		
 		currNode.nextNode = headA ;
+		return headA ;
+	}
+	
+	
+public Node makeLoop(Node headA){
+		
+		Node currNode = headA ;
+		Node secondNode = headA.nextNode ;
+		while(currNode.nextNode!=null){
+			
+			currNode = currNode.nextNode ;
+			
+		}
+		
+		currNode.nextNode = secondNode ;
 		return headA ;
 	}
 

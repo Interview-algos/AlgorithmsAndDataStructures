@@ -17,7 +17,7 @@ public class BubbleSorter {
 		 * if you want you can change it to i <= data.length - 2 */
  
 		for (int i = 0; i < data.length - 1; i++) {
-			for (int j = 0; j < data.length - 1 - i; j++) {
+			for (int j = 0; j < data.length - 1 ; j++) {
 				// do the swap if required
 				if (data[j] > data[j+1]) {
 					int tmp = data[j+1];

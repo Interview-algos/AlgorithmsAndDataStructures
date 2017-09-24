@@ -6,7 +6,7 @@ public class ReverseLinkedList {
 	
 	public static void main(String[] args) {
 		
-		LinkedList headA = new LinkedList();
+		LLinkedList headA = new LLinkedList();
 
 		headA.addAtStart(7);
 		headA.addAtStart(5);

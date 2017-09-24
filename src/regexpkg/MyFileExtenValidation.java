@@ -6,12 +6,13 @@ import java.util.regex.Pattern;
  
 public class MyFileExtenValidation {
  
-private static Pattern fileExtnPtrn = Pattern.compile("([^\\s]+(\\.(?i)(txt|doc|csv|pdf))$)");
-//	private static Pattern fileExtnPtrn = Pattern.compile("(.*)\\.(txt|doc|csv|pdf)");
+	//private static Pattern fileExtnPtrn = Pattern.compile("([^\\s]+(\\.(?i)(txt|doc|csv|pdf))$)");
+	//private static Pattern fileExtnPtrn = Pattern.compile("(.*)\\.(txt|doc|csv|pdf)");
+	private static Pattern fileExtnPtrn = Pattern.compile("(.*)(\\.){1}(txt|doc|csv|pdf)");
      
-    public static boolean validateFileExtn(String userName){
+    public static boolean validateFileExtn(String fileName){
          
-        Matcher mtch = fileExtnPtrn.matcher(userName);
+        Matcher mtch = fileExtnPtrn.matcher(fileName);
         if(mtch.matches()){
             return true;
         }

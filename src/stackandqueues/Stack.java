@@ -1,4 +1,4 @@
-package chapter5;
+package stackandqueues;
 
 public class Stack {
 	private int[] items = new int[100];

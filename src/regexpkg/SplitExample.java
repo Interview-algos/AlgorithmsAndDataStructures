@@ -13,7 +13,7 @@ public class SplitExample {
 		String[] result = pattern.split(text);
 		
 		for(String res : result){
-			System.out.println(res);
+			System.out.print(res);
 		}
 		
 		

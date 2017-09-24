@@ -1,27 +1,29 @@
 package linkedlist;
 
-public class LinkedList {
 
-	private Node head;
 
-	public Node getHead() {
+public class StringLinkedList {
+
+	private sNode head;
+
+	public sNode getHead() {
 		return this.head;
 	}
 
-	public void addAtStart(int data) {
-		Node newNode = new Node(data);
+	public void addAtStart(String data) {
+		sNode newNode = new sNode(data);
 		newNode.setNextNode(this.head);
 		this.head = newNode;
 	}
 
-	public Node deleteAtStart() {
-		Node toDel = this.head;
+	public sNode deleteAtStart() {
+		sNode toDel = this.head;
 		this.head = this.head.getNextNode();
 		return toDel;
 	}
 
-	public Node find(int data) {
-		Node curr = this.head;
+	public sNode find(int data) {
+		sNode curr = this.head;
 		while (curr != null) {
 			if (curr.getClass().equals(data)) {
 				return curr;
@@ -35,7 +37,7 @@ public class LinkedList {
 		if (head == null)
 			return 0;
 		int length = 0;
-		Node curr = this.head;
+		sNode curr = this.head;
 		while (curr != null) {
 			length += 1;
 			curr = curr.getNextNode();
@@ -48,8 +50,8 @@ public class LinkedList {
 	}
 	
 	
-	public void printList(Node head) {
-		  Node temp = head;
+	public void printList(sNode head) {
+		  sNode temp = head;
 		  while (temp != null) {
 		   System.out.format("%d ", temp.data);
 		   temp = temp.nextNode;
@@ -58,9 +60,9 @@ public class LinkedList {
 		 }
 	
 	
-	public Node makeCircularLinkedList(Node headA){
+	public sNode makeCircularLinkedList(sNode headA){
 		
-		Node currNode = headA ;
+		sNode currNode = headA ;
 		while(currNode.nextNode!=null){
 			
 			currNode = currNode.nextNode ;
@@ -72,10 +74,10 @@ public class LinkedList {
 	}
 	
 	
-public Node makeLoop(Node headA){
+public sNode makeLoop(sNode headA){
 		
-		Node currNode = headA ;
-		Node secondNode = headA.nextNode ;
+		sNode currNode = headA ;
+		sNode secondNode = headA.nextNode ;
 		while(currNode.nextNode!=null){
 			
 			currNode = currNode.nextNode ;

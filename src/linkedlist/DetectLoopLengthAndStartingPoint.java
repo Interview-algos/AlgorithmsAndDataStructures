@@ -20,8 +20,7 @@ public class DetectLoopLengthAndStartingPoint {
 	public static void main(String[] args) {
 		
 		
-		LinkedList LL1 = new LinkedList();
-
+		LLinkedList LL1 = new LLinkedList();
 		LL1.addAtStart(8);
 		LL1.addAtStart(7);
 		LL1.addAtStart(5);
@@ -32,10 +31,7 @@ public class DetectLoopLengthAndStartingPoint {
 		n = detectLoop(n);
 		countNodesInLoop(n);
 		findStartingNodeOfTheLoop(LL1.getHead());
-		
-	//	LL1.printList(headA);
-		
-		
+
 	}
 	
 	//detect if loop 
@@ -45,7 +41,7 @@ public class DetectLoopLengthAndStartingPoint {
 		Node fastNode = headA ;
 		while(fastNode!=null && fastNode.nextNode!=null){
 			slowNode = slowNode.nextNode;
-			fastNode = fastNode.nextNode ;
+			fastNode = fastNode.nextNode.nextNode ;
 			
 			if(slowNode == fastNode){
 				System.out.println("Loop detected");
@@ -55,8 +51,7 @@ public class DetectLoopLengthAndStartingPoint {
 			
 		}
 		return null;
-		
-		
+	
 	}
 	
 	

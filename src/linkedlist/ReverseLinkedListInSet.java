@@ -19,7 +19,7 @@ public class ReverseLinkedListInSet {
 	
 	public static void main(String[] args) {
 		
-		LinkedList LL1 = new LinkedList();
+		LLinkedList LL1 = new LLinkedList();
 
 		LL1.addAtStart(9);
 		LL1.addAtStart(8);
@@ -38,8 +38,6 @@ public class ReverseLinkedListInSet {
 	
 	
 	public static Node reverse(Node headA, int k){
-		
-		
 		Stack<Node> stack = new Stack<Node>() ;
 		int count = 0;
 		Node currNode = headA ;
@@ -52,7 +50,6 @@ public class ReverseLinkedListInSet {
 			currNode = currNode.nextNode ;
 			count++ ;
 		}
-		
 		
 		while(stack.size() >0){
 			if(prevNode==null){
@@ -70,11 +67,5 @@ public class ReverseLinkedListInSet {
 		prevNode.nextNode = null ;
 		return headA ;
 	}
-	
-	
-	
-
-	
-	
 	
 }

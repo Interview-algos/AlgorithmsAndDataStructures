@@ -23,53 +23,41 @@ considered to be tokens. For example, if string is "hello
 and "geeks".
  */
 
-
-
-
 package stringpkg;
 
 import java.util.StringTokenizer;
 
 public class StringTokenizerDemo {
 
+	/*
+	 * A Java program to illustrate working of StringTokenizer class:
+	 */
 
-
-	/* A Java program to illustrate working of StringTokenizer
-	   class:*/
-
-	public static void main(String args[])
-	{
+	public static void main(String args[]) {
 		System.out.println("Using Constructor 1 - ");
 		StringTokenizer st1 = new StringTokenizer("Hello Geeks How are you", " ");
 		while (st1.hasMoreTokens())
 			System.out.println(st1.nextToken());
-		
+
 		System.out.println("----------------------------");
 
 		System.out.println("Using Constructor 2 - ");
-		StringTokenizer st2 = 
-				new StringTokenizer("JAVA : Code : String", " :");
+		StringTokenizer st2 = new StringTokenizer("JAVA : Code : String", " :");
 		while (st2.hasMoreTokens())
 			System.out.println(st2.nextToken());
-		
+
 		System.out.println("----------------------------");
 
 		System.out.println("Using Constructor 3 - ");
-		StringTokenizer st3 = 
-				new StringTokenizer("JAVA : Code : String", " :",  true);
+		StringTokenizer st3 = new StringTokenizer("JAVA : Code : String", " :", true);
 		while (st3.hasMoreTokens())
 			System.out.println(st3.nextToken());
-		
-		
+
 		System.out.println("----------------------------");
-		
-		
+
 		System.out.println("Using Constructor 1 - ");
-		StringTokenizer st4 = 
-				new StringTokenizer("JAVA, : Code\t : String\n", " ",  false);
+		StringTokenizer st4 = new StringTokenizer("JAVA, : Code\t : String\n", " ", false);
 		while (st4.hasMoreTokens())
 			System.out.println(st4.nextToken());
 	}
 }
-
-

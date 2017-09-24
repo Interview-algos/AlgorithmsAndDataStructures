@@ -11,7 +11,8 @@ http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
 public class SearchInSortedRotatedArray {
 	
 	public static void main(String[] args) {
-		int[] a = {4,6,8,14,90,-9,-2,0,3} ;
+		//int[] a = {4,6,8,14,90,-9,-2,0,3} ;
+		int[] a = {4,6,8,14,90,100,-2,0,3} ;
 		
 		int len = a.length;
 		

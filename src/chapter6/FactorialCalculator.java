@@ -8,7 +8,7 @@ public class FactorialCalculator {
 	}
 		
 	public static void main(String[] args) {
-		System.out.println(new FactorialCalculator().factorial(25));
+		System.out.println(new FactorialCalculator().factorial(5));
 	}
 
 }

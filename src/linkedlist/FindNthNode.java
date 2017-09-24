@@ -29,7 +29,7 @@ public class FindNthNode {
 	
 	public static void main(String[] args) {
 		
-		LinkedList LLa = new LinkedList();
+		LLinkedList LLa = new LLinkedList();
 
 		LLa.addAtStart(5);
 		LLa.addAtStart(3);
@@ -42,7 +42,7 @@ public class FindNthNode {
 		System.out.println("Node at N/Kth element is : " + kNode.getData());
 		
 		
-		LinkedList LLb = new LinkedList();
+		LLinkedList LLb = new LLinkedList();
 
 		LLb.addAtStart(6);
 		LLb.addAtStart(5);

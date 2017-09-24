@@ -4,17 +4,10 @@ E.g. AABC can be shuffled as ABAC.
  */
 
 
-
+package stringpkg ;
 
 
 // Not working code
-
-
-package stringpkg;
-
-import java.util.HashMap;
-import java.util.Map.Entry;
-import java.util.Set;
 
 public class NoTwoCharTogether {
 	

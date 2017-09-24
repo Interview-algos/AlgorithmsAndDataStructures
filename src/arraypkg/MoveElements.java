@@ -43,7 +43,7 @@ public class MoveElements {
 		}
 			
 		for(int i=0; i<len ;i++){
-			System.out.println(arr[i]);
+			System.out.print(arr[i]);
 		}
 	}
 

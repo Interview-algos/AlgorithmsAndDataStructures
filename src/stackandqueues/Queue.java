@@ -1,4 +1,4 @@
-package chapter5;
+package stackandqueues;
 
 /**
  * This is an implementation of the Circular Queue

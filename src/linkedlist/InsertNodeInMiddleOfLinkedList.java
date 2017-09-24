@@ -3,7 +3,7 @@ package linkedlist;
 public class InsertNodeInMiddleOfLinkedList {
 	
 	public static void main(String[] args) {
-		LinkedList LLa = new LinkedList();
+		LLinkedList LLa = new LLinkedList();
 
 		LLa.addAtStart(7);
 		LLa.addAtStart(5);
@@ -11,7 +11,7 @@ public class InsertNodeInMiddleOfLinkedList {
 		LLa.addAtStart(1);
 		
 		
-		LinkedList LLb = new LinkedList();
+		LLinkedList LLb = new LLinkedList();
 
 		LLb.addAtStart(10);
 		LLb.addAtStart(8);
