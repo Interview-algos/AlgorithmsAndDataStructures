@@ -24,3 +24,4 @@ public class FindPrimeFactorOfANumber {
 			System.out.println(i);
 	}
 }
+
